@@ -17,5 +17,5 @@ CREATE TABLE expense (
     expense_day DATE NOT NULL,
 
     CONSTRAINT fk_expense_user FOREIGN KEY (user_id) REFERENCES app_user(id),
-    CONSTRAINT chk_amount_positive CHECK (amount > 0),
+    CONSTRAINT chk_amount_positive CHECK (amount > 0)
 );
