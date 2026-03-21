@@ -1,3 +1,31 @@
 spring:
-  application:
-    name: tracker
+  datasource:
+    url: jdbc:postgresql://localhost:5432/tracker
+    username: postgres
+    password: 123456
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show_sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  jackson:
+    mapper:
+      accept-case-insensitive-enums: true
+
+    mvc:
+      pathmatch:
+        matching-strategy: ANT_PATH_MATCHER
+
+server:
+  error:
+    include-message: always
+
+jwt:
+  public:
+    key: classpath:authz.pub
+  private:
+    key: classpath:authz.pem
