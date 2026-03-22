@@ -10,11 +10,11 @@ import static com.expense.tracker.mapper.UsuarioMapper.toResponse;
 public class BuscarUsuarioService {
 
     private final UsuarioRepository usuarioRepository;
-    privte final UsuarioAuten
+    private final UsuarioAutenticadoService  usuarioAutenticadoService;
 
-    public BuscarUsuarioService(UsuarioRepository usuarioRepository) {
+    public BuscarUsuarioService(UsuarioRepository usuarioRepository,  UsuarioAutenticadoService usuarioAutenticadoService) {
         this.usuarioRepository = usuarioRepository;
-
+        this.usuarioAutenticadoService = usuarioAutenticadoService;
     }
 
     public UsuarioResponse buscar() {

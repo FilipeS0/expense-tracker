@@ -1,4 +1,4 @@
 package com.expense.tracker.domain;
 
-public class Ususario {
+public class Expense {
 }

@@ -1,4 +1,4 @@
 package com.expense.tracker.repository;
 
-public interface UsuarioRepository {
+public interface ExpenseRepository {
 }
