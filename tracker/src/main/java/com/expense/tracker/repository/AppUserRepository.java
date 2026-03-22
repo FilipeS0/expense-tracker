@@ -1,12 +1,12 @@
 package com.expense.tracker.repository;
 
-import com.expense.tracker.domain.Usuario;
+import com.expense.tracker.domain.AppUser;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
 
-public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
+public interface AppUserRepository extends JpaRepository<AppUser, Long> {
 
-    Optional<Usuario> findByEmail(String email);
+    Optional<AppUser> findByEmail(String email);
 
 }

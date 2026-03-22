@@ -2,16 +2,16 @@ package com.expense.tracker.controller.response;
 
 import lombok.*;
 
-import java.time.LocalDate;
+import java.util.List;
 
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Getter @Setter
-public class UserResponse {
+@Getter
+@Setter
+public class UserWithExpenseResponse {
 
     private Long id;
     private String name;
-    private String email;
-    private LocalDate birthday;
+    private List<ExpenseResponse> expenses;
 }

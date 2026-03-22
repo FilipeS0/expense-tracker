@@ -1,6 +1,5 @@
 package com.expense.tracker.controller.request;
 
-import jakarta.annotation.Nullable;
 import jakarta.validation.constraints.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -8,24 +7,18 @@ import lombok.Setter;
 import java.time.LocalDate;
 
 @Getter @Setter
-public class UsuarioRequest {
+public class UserRequest {
 
     @NotBlank
     @Size(min = 3, max = 255)
-    private String nomeCompleto;
+    private String name;
 
     @NotNull @Email
     private String email;
 
     @NotBlank
-    private String senha;
-
-    @Size(max = 50)
-    private String apelido;
+    private String password;
 
     @NotNull
-    private LocalDate dataNascimento;
-
-    @Nullable
-    private String imagemPerfil;
+    private LocalDate birthday;
 }

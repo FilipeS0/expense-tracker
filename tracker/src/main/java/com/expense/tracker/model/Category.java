@@ -1,4 +1,4 @@
-package com.expense.tracker.domain;
+package com.expense.tracker.model;
 
 public enum Category {
     FOOD, WATER, POWER

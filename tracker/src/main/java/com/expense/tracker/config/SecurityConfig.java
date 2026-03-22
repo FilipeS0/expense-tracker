@@ -1,4 +1,4 @@
-package com.filipe.socialmedia.config;
+package com.expense.tracker.config;
 
 import com.nimbusds.jose.jwk.JWK;
 import com.nimbusds.jose.jwk.JWKSet;
